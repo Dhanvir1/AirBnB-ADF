@@ -15,7 +15,10 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"folderPath": "customer-raw-data",
+				"folderPath": {
+					"value": "@dataset().fileName",
+					"type": "Expression"
+				},
 				"fileSystem": "airbnb"
 			},
 			"columnDelimiter": ",",
