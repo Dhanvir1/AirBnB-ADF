@@ -24,6 +24,7 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
@@ -228,7 +229,7 @@
 									"type": "AzureBlobFSReadSettings",
 									"recursive": true,
 									"wildcardFileName": {
-										"value": "@item().name",
+										"value": "activity('getCustomerFilesMetadata').output.itemName",
 										"type": "Expression"
 									},
 									"enablePartitionDiscovery": false
