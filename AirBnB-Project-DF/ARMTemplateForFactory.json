@@ -407,14 +407,14 @@
 												"referenceName": "AirBnBADLS",
 												"type": "LinkedServiceReference"
 											},
-											"path": "airbnb/customer-raw-data"
+											"path": "airbnb/Synapse_Staging"
 										},
 										"enableLogging": true,
 										"storeSettings": {
 											"type": "AzureBlobFSReadSettings",
 											"recursive": true,
 											"wildcardFileName": {
-												"value": "@item().name",
+												"value": "@activity('getCustomerFilesMetadata').output.itemName",
 												"type": "Expression"
 											},
 											"enablePartitionDiscovery": false
