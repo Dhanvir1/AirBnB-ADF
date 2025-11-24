@@ -33,7 +33,7 @@
 				}
 			},
 			{
-				"name": "ForEach1",
+				"name": "IterateEachItem",
 				"type": "ForEach",
 				"dependsOn": [
 					{
