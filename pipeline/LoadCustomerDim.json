@@ -182,7 +182,7 @@
 							]
 						},
 						{
-							"name": "Delete1",
+							"name": "DeleteSourceFile",
 							"type": "Delete",
 							"dependsOn": [
 								{
