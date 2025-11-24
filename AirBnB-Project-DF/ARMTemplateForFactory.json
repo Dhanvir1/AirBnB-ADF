@@ -1052,7 +1052,7 @@
 						"derivedColumn, SynapseForLookup lookup(derivedColumn@booking_id == SynapseForLookup@booking_id,",
 						"     multiple: false,",
 						"     pickup: 'first',",
-						"     desc(synapseforlookup@timestamp, true),",
+						"     desc(SynapseForLookup@timestamp, true),",
 						"     broadcast: 'auto')~> LookupInSynapse",
 						"LookupInSynapse alterRow(insertIf(isNull(SynapseForLookup@booking_id)),",
 						"     updateIf(not(isNull(SynapseForLookup@booking_id)))) ~> alterRowForUpdate",
