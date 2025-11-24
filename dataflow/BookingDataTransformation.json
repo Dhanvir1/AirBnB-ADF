@@ -110,7 +110,7 @@
 				"          timestamp = timestamp,",
 				"          property_id = toInteger(property_id),",
 				"          amount = toInteger(amount),",
-				"          currency = toFloat(currency)) ~> derivedColumn",
+				"          currency = upper(currency)) ~> derivedColumn",
 				"derivedColumn, SynapseForLookup lookup(derivedColumn@booking_id == toInteger(SynapseForLookup@booking_id),",
 				"     multiple: false,",
 				"     pickup: 'first',",
