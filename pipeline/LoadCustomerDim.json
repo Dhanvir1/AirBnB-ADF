@@ -220,7 +220,8 @@
 									"linkedServiceName": {
 										"referenceName": "AirBnBADLS",
 										"type": "LinkedServiceReference"
-									}
+									},
+									"path": "airbnb/customer-raw-data"
 								},
 								"enableLogging": true,
 								"storeSettings": {
