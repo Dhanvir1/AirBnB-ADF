@@ -1,0 +1,11 @@
+{
+	"name": "CosmosDbNew",
+	"properties": {
+		"annotations": [],
+		"type": "CosmosDb",
+		"typeProperties": {
+			"accountEndpoint": "https://azure-cosmos-10.documents.azure.com:443/",
+			"database": "AirBnB"
+		}
+	}
+}
