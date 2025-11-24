@@ -63,7 +63,7 @@
 							"typeProperties": {
 								"variableName": "foreach iteration",
 								"value": {
-									"value": "@item().name",
+									"value": "@activity('getCustomerFilesMetadata').output.childItems",
 									"type": "Expression"
 								}
 							}
