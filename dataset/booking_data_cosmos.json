@@ -1,5 +1,5 @@
 {
-	"name": "CosmosDbNoSqlContainer1",
+	"name": "booking_data_cosmos",
 	"properties": {
 		"annotations": [],
 		"type": "CosmosDbSqlApiCollection",

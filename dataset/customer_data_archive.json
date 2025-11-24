@@ -1,5 +1,5 @@
 {
-	"name": "DelimitedText2",
+	"name": "customer_data_archive",
 	"properties": {
 		"annotations": [],
 		"type": "DelimitedText",
