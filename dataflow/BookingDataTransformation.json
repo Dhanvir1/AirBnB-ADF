@@ -14,13 +14,19 @@
 				}
 			],
 			"sinks": [],
-			"transformations": [],
+			"transformations": [
+				{
+					"name": "DataQualityCheck"
+				}
+			],
 			"scriptLines": [
 				"source(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     enableChangeFeed: true,",
 				"     changeFeedStartFromTheBeginning: false,",
-				"     format: 'document') ~> BookingData"
+				"     format: 'document') ~> BookingData",
+				"BookingData split(check_out_date<check_in_date,",
+				"     disjoint: true) ~> DataQualityCheck@(BadRecords, AcceptedRecords)"
 			]
 		}
 	}
