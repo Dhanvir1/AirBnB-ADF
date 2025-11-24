@@ -42,20 +42,7 @@
 						]
 					}
 				],
-				"userProperties": [
-					{
-						"name": "Dataset",
-						"value": "customer_data_raw"
-					},
-					{
-						"name": "Parameter",
-						"value": "fileName"
-					},
-					{
-						"name": "Value",
-						"value": "@item().name"
-					}
-				],
+				"userProperties": [],
 				"typeProperties": {
 					"items": {
 						"value": "@activity('getCustomerFilesMetadata').output.childItems",
