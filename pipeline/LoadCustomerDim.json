@@ -222,7 +222,7 @@
 										"referenceName": "AirBnBADLS",
 										"type": "LinkedServiceReference"
 									},
-									"path": "airbnb/customer-raw-data"
+									"path": "airbnb/Synapse_Staging"
 								},
 								"enableLogging": true,
 								"storeSettings": {
