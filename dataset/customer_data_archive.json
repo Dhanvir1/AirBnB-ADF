@@ -1,6 +1,10 @@
 {
 	"name": "customer_data_archive",
 	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AirBnBADLS",
+			"type": "LinkedServiceReference"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
